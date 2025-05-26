@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const imagenes = ["images/slider_i1.jpg", "images/slider_i2.jpg", "images/slider_i3.jpg"];
+    const imagenes = ["Images/slider_i1.jpg", "Images/slider_i2.jpg", "Images/slider_i3.jpg"];
     let indice = 0;
     const imagenSlider = document.getElementById("slider-index");
 
