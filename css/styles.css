@@ -1,0 +1,125 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #86C2F9; 
+    color: #000000;
+}
+
+header {
+    background-color: #FAE246; 
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 10px; 
+}
+
+nav ul li {
+    position: relative; 
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu-desplegable .submenu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FAE246; 
+    display: none; 
+    padding: 10px 20px;
+}
+
+.menu-desplegable:hover .submenu {
+    display: block; 
+}
+
+.menu-desplegable .submenu li a {
+    padding: 10px 20px; 
+    display: block; 
+    text-decoration: none;
+    color: #333;
+}
+
+.menu-desplegable .submenu li {
+    margin-bottom: 5px;
+}
+
+.bienvenida, .sanjuanero, .sanjuanero-2, .ritmos-sanjuanero {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 90%; 
+    text-align: justify;
+}
+
+.imagen-destacada img, .portada-andina, .baile-andina, .ins-andina {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+footer {
+    background-color: #DE220D;
+    color: #FFFFFF; 
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    header {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .menu-desplegable .submenu {
+        position: relative; 
+        top: auto;
+        left: auto;
+    }
+
+    .bienvenida, .sanjuanero, .sanjuanero-2, .ritmos-sanjuanero {
+        font-size: 0.9rem; 
+    }
+
+    .portada-andina, .baile-andina, .ins-andina {
+        max-width: 100%; 
+        height: auto;
+        object-fit: cover; 
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .bienvenida, .sanjuanero, .sanjuanero-2, .ritmos-sanjuanero {
+        max-width: 70%; 
+    }
+
+@media only screen and (min-width: 769px) {
+        .imagen-destacada img {
+            max-width: 100%; 
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}
